@@ -21,7 +21,7 @@ def snowflake_connection():
   
   ctx = snowflake.connector.connect(
       user='<user>',
-      account='<accountname>.us-east-1',
+      account='<accountname>.<region>', # example:   myaccount.us-east-1
       private_key=pkb,
       warehouse='<warehouse>',
       database='<database>',
